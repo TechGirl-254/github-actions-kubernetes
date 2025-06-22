@@ -91,14 +91,14 @@ github-actions-kubernetes/
 
 2. **Create a Personal Access Token (Recommended):**
 
-  - Go to Docker Hub > **Account Settings** > **Security**.
-  - Click **New Access Token**, name it, and copy the token.
+- Go to Docker Hub > **Account Settings** > **Security**.
+- Click **New Access Token**, name it, and copy the token.
 
 #### **Kubernetes Config**
 
 1. **Get Your Kubeconfig File:**
 
-  - Typically located at `$HOME/.kube/config`.
+- Typically located at `$HOME/.kube/config`.
 
 2. **Base64 Encode the Kubeconfig:**
 
@@ -120,9 +120,9 @@ github-actions-kubernetes/
 
 3. **Add the Following Secrets:**
 
-  - **`DOCKERHUB_USERNAME`**: Your Docker Hub username.
-  - **`DOCKERHUB_TOKEN`**: Your Docker Hub password or access token.
-  - **`KUBE_CONFIG_DATA`**: The base64 encoded kubeconfig file.
+- **`DOCKERHUB_USERNAME`**: Your Docker Hub username.
+- **`DOCKERHUB_TOKEN`**: Your Docker Hub password or access token.
+- **`KUBE_CONFIG_DATA`**: The base64 encoded kubeconfig file.
 
 ## Usage
 
@@ -161,8 +161,8 @@ kubectl apply -f service.yaml
 
 2. **Access the Application:**
 
-  - Navigate to the external IP in your browser.
-  - You should see **"Hello, Kubernetes!"** displayed.
+- Navigate to the external IP in your browser.
+- You should see **"Hello, Kubernetes!"** displayed.
 
 ## Step-by-Step Commands
 
@@ -228,9 +228,9 @@ kubectl get pods
 
 2. **Add Secrets:**
 
-  - **DOCKERHUB_USERNAME**
-  - **DOCKERHUB_TOKEN**
-  - **KUBE_CONFIG_DATA**
+- **DOCKERHUB_USERNAME**
+- **DOCKERHUB_TOKEN**
+- **KUBE_CONFIG_DATA**
 
 ### **Trigger GitHub Actions Workflow**
 
@@ -293,3 +293,5 @@ This project is licensed under the Apache License Version 2.0- see the [LICENSE]
 ---
 
 **Note:** Replace `your-username` and `your-dockerhub-username` with your actual GitHub and Docker Hub usernames respectively.
+
+### Tadaaaa!!!
