@@ -30,11 +30,10 @@ jobs:
 
       - name: Decode kubeconfig
         run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 --decode > kubeconfig.yaml
+          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 --decode > ${{ github.workspace }}/kubeconfig.yaml
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f deployment.yaml --validate=false
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
         env:
